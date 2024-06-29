@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\Candlestick.csproj": {}
+    "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\src\\Candlestick.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\Candlestick.csproj": {
+    "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\src\\Candlestick.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\Candlestick.csproj",
+        "projectUniqueName": "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\src\\Candlestick.csproj",
         "projectName": "Candlestick",
-        "projectPath": "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\Candlestick.csproj",
+        "projectPath": "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\src\\Candlestick.csproj",
         "packagesPath": "C:\\Users\\dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\obj\\",
+        "outputPath": "C:\\Users\\dragon\\Desktop\\Candlestick\\Candlestick\\src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

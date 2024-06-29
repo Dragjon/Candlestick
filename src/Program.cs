@@ -270,8 +270,10 @@ public class Connect4
 
     public static void Main(string[] args)
     {
-        var boardClass = new StdBoard();
-        Console.WriteLine(@"
+        while (true)
+        {
+            var boardClass = new StdBoard();
+            Console.WriteLine(@"
    ______                            __        __ __
   / ____/___  ____  ____  ___  _____/ /_      / // /
  / /   / __ \/ __ \/ __ \/ _ \/ ___/ __/_____/ // /_
@@ -279,38 +281,46 @@ public class Connect4
 /____/\____/_/ /_/_/ /_/\___/\___/\__/        /_/   
                                                     
 ");
-        Console.Write("Start as 1st player (red R) or 2nd player(yellow Y) [r/y]: ");
-        string input = Console.ReadLine();
-        int turn = input.ToLower() == "r" ? red : yellow;
-        computer_turn = 3 - turn;
-        while (true)
-        {
-            PrintBoard(boardClass);
-            int potentialWin = CheckWin(boardClass);
-            if (potentialWin != noPce)
+            Console.Write("Start as 1st player (red R) or 2nd player(yellow Y) [r/y]: ");
+            string input = Console.ReadLine();
+            int turn = input.ToLower() == "r" ? red : yellow;
+            computer_turn = 3 - turn;
+            while (true)
             {
-                string winnerChar = potentialWin == red ? "Red" : "Yellow";
-                Console.WriteLine($"{winnerChar} won by connecting 4!");
+                PrintBoard(boardClass);
+                int potentialWin = CheckWin(boardClass);
+                if (potentialWin != noPce)
+                {
+                    string winnerChar = potentialWin == red ? "Red" : "Yellow";
+                    Console.WriteLine($"{winnerChar} won by connecting 4!");
+                    break;
+                }
+
+                if (MoveGen(boardClass).Count == 0)
+                {
+                    Console.WriteLine("The game is drawn");
+                }
+
+                if (boardClass.turn == turn)
+                {
+                    Console.Write("Pick a column (1-7): ");
+                    int col = int.Parse(Console.ReadLine());
+                    boardClass = AddPiece(boardClass, col - 1);
+                }
+                else
+                {
+                    Console.WriteLine($"Computer WDL: {Mcts(boardClass)}");
+                    boardClass = AddPiece(boardClass, bestMove.move);
+                }
+            }
+
+            Console.Write("Type 'Q' to Exit else ENTER: ");
+            string input2 = Console.ReadLine();
+            if (input2 == "Q")
+            {
                 break;
             }
 
-            if (MoveGen(boardClass).Count == 0)
-            {
-                Console.WriteLine("The game is drawn");
-            }
-
-            if (boardClass.turn == turn)
-            {
-                Console.Write("Pick a column (1-7): ");
-                int col = int.Parse(Console.ReadLine());
-                boardClass = AddPiece(boardClass, col - 1);
-            }
-            else
-            {
-                Console.WriteLine($"Computer WDL: {Mcts(boardClass)}");
-                boardClass = AddPiece(boardClass, bestMove.move);
-            }
         }
-       
     }
 }
