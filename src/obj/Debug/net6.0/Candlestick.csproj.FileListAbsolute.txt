@@ -1,0 +1,15 @@
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.csproj.AssemblyReference.cache
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.AssemblyInfoInputs.cache
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.AssemblyInfo.cs
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.csproj.CoreCompileInputs.cache
+C:\Users\dragon\Desktop\Candlestick\Candlestick\bin\Debug\net6.0\Candlestick.exe
+C:\Users\dragon\Desktop\Candlestick\Candlestick\bin\Debug\net6.0\Candlestick.deps.json
+C:\Users\dragon\Desktop\Candlestick\Candlestick\bin\Debug\net6.0\Candlestick.runtimeconfig.json
+C:\Users\dragon\Desktop\Candlestick\Candlestick\bin\Debug\net6.0\Candlestick.dll
+C:\Users\dragon\Desktop\Candlestick\Candlestick\bin\Debug\net6.0\Candlestick.pdb
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.dll
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\refint\Candlestick.dll
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.pdb
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\Candlestick.genruntimeconfig.cache
+C:\Users\dragon\Desktop\Candlestick\Candlestick\obj\Debug\net6.0\ref\Candlestick.dll
