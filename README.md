@@ -1,2 +1,2 @@
-# Candlestick - A pure MCTS connect 4 AI
+# Candlestick
  A pure MCTS implementation of connect 4
